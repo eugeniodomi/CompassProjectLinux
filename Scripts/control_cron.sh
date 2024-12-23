@@ -1,31 +1,46 @@
 #!/bin/bash
 
-# Caminho para o script que será automatizado
-SCRIPT_PATH="etc\nginx\Scripts\server_validate.sh"
+# Define o comando que será gerenciado pelo crontab
+COMMAND="*/5 * * * * /etc/nginx/Scripts/server_validate.sh"
 
-# Cron schedule (exemplo: a cada 5 minutos)
-CRON_SCHEDULE="*/5 * * * *"
 
-# Função para ligar a automação
-ligar_automacao() {
-    # Adiciona o cron job para executar o script
-    (crontab -l 2>/dev/null; echo "$CRON_SCHEDULE $SCRIPT_PATH") | crontab -
-    echo "Automação ligada! O script será executado a cada 5 minutos."
+# Função para adicionar a linha no crontab de root, se ela não existir
+add_cron_if_needed() {
+  # Verifica se a linha já está no crontab, se não, adiciona
+  if ! sudo crontab -l | grep -qF "$COMMAND"; then
+    # Adiciona o comando ao crontab, mantendo o conteúdo atual
+    (sudo crontab -l; echo "$COMMAND") | sudo crontab -
+    echo "Linha adicionada ao crontab de root."
+  fi
 }
 
-# Função para desligar a automação
-desligar_automacao() {
-    # Remove o cron job que executa o script
-    crontab -l 2>/dev/null | sed "s|$SCRIPT_PATH|# $SCRIPT_PATH|" crontab -
-    echo "Automação desligada! O script não será mais executado."
+# Função para comentar a linha no crontab de root
+comment_cron() {
+  # Usar sudo para garantir que estamos modificando o crontab de root
+  sudo crontab -l | grep -v -F "$COMMAND" > temp_cron
+  sudo crontab -l | grep -F "$COMMAND" | sed 's/^/#/' >> temp_cron
+  sudo crontab temp_cron
+  rm temp_cron
+  echo "Automatização desligada (Linha comentada no crontab de root)"
 }
 
-# Verificar o argumento fornecido
-if [ "$1" == "ligar" ]; then
-    ligar_automacao
-elif [ "$1" == "desligar" ]; then
-    desligar_automacao
+# Função para descomentar a linha no crontab de root
+uncomment_cron() {
+  # Usar sudo para garantir que estamos modificando o crontab de root
+  sudo crontab -l | grep -v -F "$COMMAND" > temp_cron
+  sudo crontab -l | grep -F "$COMMAND" | sed 's/^#//' >> temp_cron
+  sudo crontab temp_cron
+  rm temp_cron
+  echo "Automatização ligada! (Linha descomentada no crontab de root)"
+}
+
+# Verifica se a automação está sendo ligada ou desligada
+if [[ "$1" == "desligar" ]]; then
+  add_cron_if_needed
+  comment_cron
+elif [[ "$1" == "ligar" ]]; then
+  add_cron_if_needed
+  uncomment_cron
 else
-    echo "Uso: $0 {ligar|desligar}"
-    exit 1
+  echo "Uso: $0 [ligar|desligar]"
 fi
