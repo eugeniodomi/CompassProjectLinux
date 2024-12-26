@@ -43,64 +43,88 @@ Além das etapas básicas do projeto, foi adicionada uma funcionalidade extra:
 ```
 
 # **Índice**
-
-1. [Instalação do Ubuntu via WSL no Windows](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
+1. **Instalação do Ubuntu via WSL no Windows**  
    
-    1.1. [Ativar o WSL no Windows](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    1.2. [Configurar o WSL 2 como padrão (opcional, mas recomendado)](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
-
-3. [Configurar o Ubuntu no Primeiro Uso](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
+   1.1. [Ativar o WSL no Windows](#ativar-o-wsl-no-windows)  
    
-    2.1. [Abrir o Ubuntu](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    2.2. [Criar um Usuário e Senha](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    2.3. [Atualizar o Sistema](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    2.4. [Configurar o Ubuntu para a Versão WSL 2](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    2.5. [Instalar ferramentas essenciais](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
+   1.2. [Configurar o WSL 2 como padrão (opcional, mas recomendado)](#configurar-o-wsl-2-como-padrão-opcional-mas-recomendado)
 
-5. [Instalação do Git para Versionamento](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
+2. **Configurar o Ubuntu no Primeiro Uso**  
    
-    3.1. [Instale o Git](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    3.2. [Configure seu usuário e e-mail no Git](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    3.3. [Crie ou navegue até a pasta do projeto](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    3.4. [Inicialize o repositório Git na pasta do projeto](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    3.5. [Adicione um arquivo `.gitignore` (opcional)](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
-
-7. [Instalação dos pré-requisitos do NGINX](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
+   2.1. [Abrir o Ubuntu](#abrir-o-ubuntu)  
    
-    4.1. [Instale os pré-requisitos](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    4.2. [Importe uma chave de assinatura oficial do nginx](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    4.3. [Verifique a chave baixada](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    4.4. [Configure o repositório apt](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    4.5. [Configuração de fixação do repositório](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
+   2.2. [Criar um Usuário e Senha](#criar-um-usuário-e-senha)  
+   
+   2.3. [Atualizar o Sistema](#atualizar-o-sistema)  
+   
+   2.4. [Configurar o Ubuntu para a Versão WSL 2](#configurar-o-ubuntu-para-a-versão-wsl-2)  
+   
+   2.5. [Instalar ferramentas essenciais](#instalar-ferramentas-essenciais)
 
-9. [Instalação do NGINX](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
-    
-    5.1. [Atualize o sistema](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    5.2. [Instale o NGINX](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    5.3. [Inicie o serviço NGINX](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    5.4. [Verifique o status do serviço](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
+3. **Instalação do Git para Versionamento**  
+   
+   3.1. [Instale o Git](#instale-o-git)  
+   
+   3.2. [Configure seu usuário e e-mail no Git](#configure-seu-usuário-e-e-mail-no-git)  
+   
+   3.3. [Crie ou navegue até a pasta do projeto](#crie-ou-navegue-ate-a-pasta-do-projeto)  
+   
+   3.4. [Inicialize o repositório Git na pasta do projeto](#inicialize-o-repositório-git-na-pasta-do-projeto)  
+   
+   3.5. [Adicione um arquivo `.gitignore` (opcional)](#adicione-um-arquivo-gitignore-opcional)
 
-11. [Instalação do UFW (opcional)](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
-    
-    6.1. [Atualize o sistema](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    6.2. [Instale o UFW](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    6.3. [Permitir conexões de entrada e saída para NGINX](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    6.4. [Verifique as regras do firewall](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
+4. **Instalação dos pré-requisitos do NGINX**  
+   
+   4.1. [Instale os pré-requisitos](#instale-os-pré-requisitos)  
+   
+   4.2. [Importe uma chave de assinatura oficial do nginx](#importe-uma-chave-de-assinatura-oficial-do-nginx)  
+   
+   4.3. [Verifique a chave baixada](#verifique-a-chave-baixada)  
+   
+   4.4. [Configure o repositório apt](#configure-o-repositório-apt)  
+   
+   4.5. [Configuração de fixação do repositório](#configuração-de-fixação-do-repositório)
 
-13. [Teste do Server](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
-    
-    7.1. [Obtenha o endereço IP do servidor](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    7.2. [Acesse o servidor pelo navegador](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)  
-    7.3. [Resultados esperados](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
+5. **Instalação do NGINX**  
+   
+   5.1. [Atualize o sistema](#atualize-o-sistema)  
+   
+   5.2. [Instale o NGINX](#instale-o-nginx)  
+   
+   5.3. [Inicie o serviço NGINX](#inicie-o-serviço-nginx)  
+   
+   5.4. [Verifique o status do serviço](#verifique-o-status-do-serviço)
 
-14. [Script Bash para Captura de Log](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
-    
+6. **Instalação do UFW (opcional)**  
+   
+   6.1. [Atualize o sistema](#atualize-o-sistema-2)  
+   
+   6.2. [Instale o UFW](#instale-o-ufw)  
+   
+   6.3. [Permitir conexões de entrada e saída para NGINX](#permitir-conexões-de-entrada-e-saída-para-nginx)  
+   
+   6.4. [Verifique as regras do firewall](#verifique-as-regras-do-firewall)
 
-16. [Automatização dos Scripts de Logs](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
-    
+7. **Teste do Server**  
+   
+   7.1. [Obtenha o endereço IP do servidor](#obtenha-o-endereço-ip-do-servidor)  
+   
+   7.2. [Acesse o servidor pelo navegador](#acesse-o-servidor-pelo-navegador)  
+   
+   7.3. [Resultados esperados](#resultados-esperados)
 
-18. [Criação de Menu Interativo](https://www.notion.so/Documenta-o-Atividade-Linux-15fb1a83c777801791a3d50fc217b639?pvs=21)
-    
+8. **Script Bash para Captura de Log**  
+   
+   8.1. [Detalhes do script](#detalhes-do-script)
+
+9. **Automatização dos Scripts de Logs**  
+   
+   9.1. [Automatizando a execução do script](#automatizando-a-execução-do-script)
+
+10. **Criação de Menu Interativo**  
+   
+    10.1. [Detalhes do menu interativo](#detalhes-do-menu-interativo)
+
 
 
 # **Instalação do Ubuntu via WSL no Windows**
