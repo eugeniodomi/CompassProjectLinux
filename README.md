@@ -51,79 +51,79 @@ Além das etapas básicas do projeto, foi adicionada uma funcionalidade extra:
 
 2. **Configurar o Ubuntu no Primeiro Uso**  
    
-   2.1. [Abrir o Ubuntu](#abrir-o-ubuntu)  
+   2.1. [Abrir o Ubuntu](#2.1---abrir-o-ubuntu)  
    
-   2.2. [Criar um Usuário e Senha](#criar-um-usuário-e-senha)  
+   2.2. [Criar um Usuário e Senha](#2.2---criar-um-usuário-e-senha)  
    
-   2.3. [Atualizar o Sistema](#atualizar-o-sistema)  
+   2.3. [Atualizar o Sistema](#2.3---atualizar-o-sistema)  
    
-   2.4. [Configurar o Ubuntu para a Versão WSL 2](#configurar-o-ubuntu-para-a-versão-wsl-2)  
+   2.4. [Configurar o Ubuntu para a Versão WSL 2](#2.4---configurar-o-ubuntu-para-a-versão-wsl-2)  
    
-   2.5. [Instalar ferramentas essenciais](#instalar-ferramentas-essenciais)
+   2.5. [Instalar ferramentas essenciais](#2.5---instalar-ferramentas-essenciais)
 
 3. **Instalação do Git para Versionamento**  
    
-   3.1. [Instale o Git](#instale-o-git)  
+   3.1. [Instale o Git](#3.1---instale-o-git)  
    
-   3.2. [Configure seu usuário e e-mail no Git](#configure-seu-usuário-e-e-mail-no-git)  
+   3.2. [Configure seu usuário e e-mail no Git](#3.2---configure-seu-usuário-e-e-mail-no-git)  
    
-   3.3. [Crie ou navegue até a pasta do projeto](#crie-ou-navegue-ate-a-pasta-do-projeto)  
+   3.3. [Crie ou navegue até a pasta do projeto](#3.3---crie-ou-navegue-ate-a-pasta-do-projeto)  
    
-   3.4. [Inicialize o repositório Git na pasta do projeto](#inicialize-o-repositório-git-na-pasta-do-projeto)  
+   3.4. [Inicialize o repositório Git na pasta do projeto](#3.4---inicialize-o-repositório-git-na-pasta-do-projeto)  
    
-   3.5. [Adicione um arquivo `.gitignore` (opcional)](#adicione-um-arquivo-gitignore-opcional)
+   3.5. [Adicione um arquivo `.gitignore` (opcional)](#3.5---adicione-um-arquivo-gitignore-opcional)
 
 4. **Instalação dos pré-requisitos do NGINX**  
    
-   4.1. [Instale os pré-requisitos](#instale-os-pré-requisitos)  
+   4.1. [Instale os pré-requisitos](#4.1---instale-os-pré-requisitos)  
    
-   4.2. [Importe uma chave de assinatura oficial do nginx](#importe-uma-chave-de-assinatura-oficial-do-nginx)  
+   4.2. [Importe uma chave de assinatura oficial do nginx](#4.2---importe-uma-chave-de-assinatura-oficial-do-nginx)  
    
-   4.3. [Verifique a chave baixada](#verifique-a-chave-baixada)  
+   4.3. [Verifique a chave baixada](#4.3---verifique-a-chave-baixada)  
    
-   4.4. [Configure o repositório apt](#configure-o-repositório-apt)  
+   4.4. [Configure o repositório apt](#4.4---configure-o-repositório-apt)  
    
-   4.5. [Configuração de fixação do repositório](#configuração-de-fixação-do-repositório)
+   4.5. [Configuração de fixação do repositório](#4.5---configuração-de-fixação-do-repositório)
 
 5. **Instalação do NGINX**  
    
-   5.1. [Atualize o sistema](#atualize-o-sistema)  
+   5.1. [Atualize o sistema](#5.1---atualize-o-sistema)  
    
-   5.2. [Instale o NGINX](#instale-o-nginx)  
+   5.2. [Instale o NGINX](#5.2---instale-o-nginx)  
    
-   5.3. [Inicie o serviço NGINX](#inicie-o-serviço-nginx)  
+   5.3. [Inicie o serviço NGINX](#5.3---inicie-o-serviço-nginx)  
    
-   5.4. [Verifique o status do serviço](#verifique-o-status-do-serviço)
+   5.4. [Verifique o status do serviço](#5.4---verifique-o-status-do-serviço)
 
 6. **Instalação do UFW (opcional)**  
    
-   6.1. [Atualize o sistema](#atualize-o-sistema-2)  
+   6.1. [Atualize o sistema](#6.1---atualize-o-sistema-2)  
    
-   6.2. [Instale o UFW](#instale-o-ufw)  
+   6.2. [Instale o UFW](#6.2---instale-o-ufw)  
    
-   6.3. [Permitir conexões de entrada e saída para NGINX](#permitir-conexões-de-entrada-e-saída-para-nginx)  
+   6.3. [Permitir conexões de entrada e saída para NGINX](#6.3---permitir-conexões-de-entrada-e-saída-para-nginx)  
    
-   6.4. [Verifique as regras do firewall](#verifique-as-regras-do-firewall)
+   6.4. [Verifique as regras do firewall](#6.4---verifique-as-regras-do-firewall)
 
 7. **Teste do Server**  
    
-   7.1. [Obtenha o endereço IP do servidor](#obtenha-o-endereço-ip-do-servidor)  
+   7.1. [Obtenha o endereço IP do servidor](#7.1---obtenha-o-endereço-ip-do-servidor)  
    
-   7.2. [Acesse o servidor pelo navegador](#acesse-o-servidor-pelo-navegador)  
+   7.2. [Acesse o servidor pelo navegador](#7.2---acesse-o-servidor-pelo-navegador)  
    
-   7.3. [Resultados esperados](#resultados-esperados)
+   7.3. [Resultados esperados](#7.3---resultados-esperados)
 
 8. **Script Bash para Captura de Log**  
    
-   8.1. [Detalhes do script](#detalhes-do-script)
+   8.1. [Detalhes do script](#8.1---detalhes-do-script)
 
 9. **Automatização dos Scripts de Logs**  
    
-   9.1. [Automatizando a execução do script](#automatizando-a-execução-do-script)
+   9.1. [Automatizando a execução do script](#9.1---automatizando-a-execução-do-script)
 
 10. **Criação de Menu Interativo**  
    
-    10.1. [Detalhes do menu interativo](#detalhes-do-menu-interativo)
+    10.1. [Detalhes do menu interativo](#10.1---detalhes-do-menu-interativo)
 
 
 
