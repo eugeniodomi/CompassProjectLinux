@@ -45,7 +45,7 @@ Além das etapas básicas do projeto, foi adicionada uma funcionalidade extra:
 # **Índice**
 1. **Instalação do Ubuntu via WSL no Windows**  
    
-   1.1. [Ativar o WSL no Windows](#ativar-o-wsl-no-windows)  
+   1.1. [Ativar o WSL no Windows](#---ativar-o-wsl-no-windows)  
    
    1.2. [Configurar o WSL 2 como padrão (opcional, mas recomendado)](#configurar-o-wsl-2-como-padrão-opcional-mas-recomendado)
 
