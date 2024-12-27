@@ -9,7 +9,17 @@ Este projeto tem como objetivo configurar um servidor NGINX utilizando o Windows
 O WSL permite rodar distribuições Linux em sistemas Windows de maneira integrada, eliminando a necessidade de máquinas virtuais ou dual-boot. Neste projeto, utilizamos a distribuição Ubuntu como base para instalar e configurar o NGINX, um dos servidores web mais populares devido ao seu desempenho e versatilidade. A configuração do NGINX inclui a instalação de pré-requisitos, configuração inicial, e testes para garantir seu funcionamento no ambiente Windows.
 Este projeto individual foi desenvolvido como entrega final de uma sprint para a empresa **Compass UOL**, com foco na trilha de **Linux**, demonstrando competências em administração de servidores, automação de tarefas e desenvolvimento de scripts Bash.
 
-## Requisitos básicos
+
+## **O que contém no repositório**
+O repositório contém todo o servidor configurado, com todos os scripts necessários salvos no diretório Scripts:. 
+Este diretório inclui os arquivos responsáveis pelas configurações e automações realizadas no servidor. Além disso, todos os logs gerados pelo servidor estão armazenados na pasta logs, permitindo a análise detalhada das operações realizadas, tanto no modo online quanto offline.
+
+Esses arquivos e diretórios visam fornecer uma documentação completa e organizada do servidor Nginx, incluindo as etapas realizadas, os scripts utilizados e os registros de log para análise posterior.
+
+No arquivo salvo como release, contém os arquivos comprovantes da atividade de configuração e operação do servidor Nginx, incluindo screenshots e vídeos. As capturas de tela documentam visualmente as etapas realizadas durante o processo de instalação, configuração e monitoramento do servidor, garantindo transparência e rastreabilidade das ações executadas.
+
+
+## Requisitos básicos estabelecidos no projeto
 
 Um dos diferenciais deste projeto é a criação de um script Bash chamado `validate_service.sh`, desenvolvido para validar automaticamente o status do serviço NGINX. Este script:
 
