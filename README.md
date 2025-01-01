@@ -438,10 +438,10 @@ Após isso, o arquivo `/var/log/service_status/status.log` terá registros como:
 
 ## 10 - Criação de menu interativo
 
-**1. Crie o Script - S**alve o código acima em um arquivo chamado `nginx_menu.sh` dentro da pasta Scripts ou na de sua preferência.
+**1. Crie o Script - S**alve o código (contido no diretorio Scripts/nginx_menu.sh) da documentacao em um arquivo chamado `nginx_menu.sh` dentro da pasta Scripts ou na de sua preferência.
 
 ```bash
-sudo nano /etc/nginx/Scripts/crontrol_cron.sh
+sudo nano /etc/nginx/Scripts/nginx_menu.sh
 ```
 
  
@@ -454,7 +454,7 @@ sudo nano /etc/nginx/Scripts/crontrol_cron.sh
 chmod +x nginx_menu.sh
 ```
 
-**3Execute o Script**:
+**3. Execute o Script**:
 
 ```bash
 ./nginx_menu.sh
