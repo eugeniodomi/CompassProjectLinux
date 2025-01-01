@@ -446,15 +446,15 @@ sudo nano /etc/nginx/Scripts/nginx_menu.sh
 
  
 
-1. Adicione o código contido neste repositório no seu arquivo criado.
+2. Adicione o código contido neste repositório no seu arquivo criado.
 
-1. **Dê Permissões de Execução**:
+3. **Dê Permissões de Execução**:
 
 ```bash
 chmod +x nginx_menu.sh
 ```
 
-**3. Execute o Script**:
+**4. Execute o Script**:
 
 ```bash
 ./nginx_menu.sh
