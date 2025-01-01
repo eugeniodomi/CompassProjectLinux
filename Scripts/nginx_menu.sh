@@ -30,7 +30,7 @@ while true; do
             ;;
         2)
             echo -e "\nParando Nginx...\n"
-            # Ajustando para garantir que o Nginx seja parado corretamente
+            # Garantindo que o Nginx foi parado corretamente
             sudo systemctl stop nginx
             sudo systemctl status nginx
 	    # Verificando o status do serviço após parar
